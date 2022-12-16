@@ -1,14 +1,14 @@
-
+Ŵ
 def bubble_sort(lista)
        
   comprimento = lista.length #Poderia por "size" no lugar de "length" para saber a quantidade total de elementos.
   
   loop do 
-    trocado = false #É preciso criar essa variável que vai ser usada para que não caia em um Loop infinito!Aqui se gerencia a troca
-    (comprimento-1).times do|i| #Comando para execultar o LOOP para cada elemento da lista
+    trocado = false #É preciso criar essa variável que vai ser usada para que não caia em um Loop infinito!Aqui se gerencia a troca.
+    (comprimento-1).times do|i| #Comando para execultar o LOOP para cada elemento da lista.
  
       if
-        lista[i] > lista [i+1] # Se o elemento anterior da lista for maior que o posterior
+        lista[i] > lista [i+1] # Se o elemento anterior da lista for maior que o posterior.
         lista[i], lista[i+1] = lista[i+1], lista[i] #Então troque a posição dos 2 elementos (só fará isso se o comando acima for satisfeito)
         trocado = true
       end  
