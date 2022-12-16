@@ -1,4 +1,3 @@
-Ŵ
 def bubble_sort(lista)
        
   comprimento = lista.length #Poderia por "size" no lugar de "length" para saber a quantidade total de elementos.
