@@ -1,0 +1,4 @@
+line = gets
+print line
+line_size = gets.size
+print line_size
