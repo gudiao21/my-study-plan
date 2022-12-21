@@ -1,4 +1,4 @@
-class Pangram
+geclass Pangram
     def initialize(string)
       @input = string.downcase.split('')
       @map = {}
