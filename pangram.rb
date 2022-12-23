@@ -1,4 +1,4 @@
-def is_pangram(string) #Cria um Método com parâmetro chamado "string".
+def pangram(string) #Cria um Método com parâmetro chamado "string".
 
   alpha = ("a".."z").to_a #Cria e armazena na variável "alpha" um array de letras de "a" até "z".Portando "alpha" foi transformado em um array através do comando ".to_a".
   string.downcase.split("").each do |i| #Para cada elemento do parâmetro "string", que será transformado em minúsculos através do método ".downcase", faça a linha abaixo. O "Split("")" acredito que seria uma forma de ingnorar os espaços encontrados no parâmentro "string", analizando assim letra por letra para cada "i" do parâmetro "string", pois os espaços não são relevantes para a análise em questão!
@@ -17,4 +17,4 @@ def is_pangram(string) #Cria um Método com parâmetro chamado "string".
   puts "Letra(s) que faltam para ser um pangram são/é: #{alpha}" # imprimir os caracteres que não foram deletados e que impediram que a frase "The quick brown ..." não seja um pangram.
 end
 
-is_pangram("The quick brown fox jumps over the lazy dog!") #chama o Método pelo nome "is_pangram" e passa o parâmetro "string" como " The quick ..."
+pangram("The quick brown fox jumps over the lazy dog!") #chama o Método pelo nome "is_pangram" e passa o parâmetro "string" como " The quick ..."
