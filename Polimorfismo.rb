@@ -4,7 +4,7 @@ class Instrumento
   end
 end
 
-class Teclado < Instrumento #Aqui não há a criação de método, então herdará o exato método da "classe Instrumento", não gerando assim "polimorfismo".
+class Teclado < Instrumento #Herdará o exato método da "class Instrumento"
   def escrever
     puts "tecladoooo"
     super #Além de executar o comando "puts" acima, herda, também, exatamente a "class Instrumento", ou seja, faz o método "puts"(linha 9) e o que se faz na "class Instrumento".

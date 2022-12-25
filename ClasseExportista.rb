@@ -1,27 +1,25 @@
-class Esportista
+class Esportista # Classe Pai.
   def competir
     puts 'Participando de uma competição.'
   end
 end
 
-class JogadorDeFutebol < Esportista
+class JogadorDeFutebol < Esportista # Classe Filho.
   def correr
-    puts 'Correr atrás da bola.'
-    super
+    puts "Correr atrás da bola."
+    #super
   end
 end
 
-class Maratonista < Esportista
+class Maratonista < Esportista # Classe Filho.
   def correr
     puts 'Percorrendo o circuito.'
-    super
   end
 end
 
-esportista = Esportista.new
+#esportista = Esportista.new
 jogadordefutebol = JogadorDeFutebol.new
 maratonista = Maratonista.new
 
-esportista.competir
 jogadordefutebol.correr
 maratonista.correr
