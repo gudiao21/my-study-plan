@@ -7,7 +7,6 @@ end
 class JogadorDeFutebol < Esportista # Classe Filho.
   def correr
     puts "Correr atrás da bola."
-    super
   end
 end
 
@@ -18,8 +17,11 @@ class Maratonista < Esportista # Classe Filho.
 end
 
 #esportista = Esportista.new
-jogadordefutebol = JogadorDeFutebol.new
+
+jogador = JogadorDeFutebol.new
 maratonista = Maratonista.new
 
-jogadordefutebol.correr
+jogador.competir
+jogador.correr
+maratonista.competir
 maratonista.correr
