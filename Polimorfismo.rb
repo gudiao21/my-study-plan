@@ -7,7 +7,7 @@ end
 class Teclado < Instrumento #Aqui não há a criação de método, então herdará o exato método da "classe Instrumento", não gerando assim "polimorfismo".
   def escrever
     puts "tecladoooo"
-    super #Além de executar o comando "puts" acima, herda, também, exatamente a "classe Instrumento", ou seja, faz o método "puts" e o que se faz a "class Instrumento".
+    super #Além de executar o comando "puts" acima, herda, também, exatamente a "class Instrumento", ou seja, faz o método "puts"(linha 9) e o que se faz na "class Instrumento".
   end  
 end
 
@@ -23,10 +23,10 @@ class Caneta < Instrumento
   end
 end
 
-teclado = Teclado.new #Criando o objeto "teclado".
-lapis = Lapis.new #Criando o objeto "lapis".
-caneta = Caneta.new #Criando o objeto "caneta".
+teclado = Teclado.new #Criando o objeto "teclado" a partir da "class Teclado". Sendo a "class Teclado" um esboço e o "teclado" o objeto do mundo real.
+lapis = Lapis.new #Criando o objeto "lapis" a partir da "class Lapis". Sendo a classe "Lapis" um esboço e o "lapis" é o objeto do mundo real.
+caneta = Caneta.new #Criando o objeto "caneta" a partir da "class Caneta". Onde a "Class Caneta" é o esboço e a "caneta" o objeto do mundo real.
 
-lapis.escrever #Chamada do objeto lapis que está ligado à "classe Instrumento", mas que o sobrescreve.
-caneta.escrever #Chamada do objeto caneta que está ligado à "classe Instrumento", mas que o sobrescreve.
-teclado.escrever #Chamada do objeto teclado que está ligado à "classe Instrumento", mas que não o sobrescreve.
+lapis.escrever #Chamada do objeto "lapis" que está ligado à "classe Instrumento", mas que o sobrescreve.
+caneta.escrever #Chamada do objeto "caneta" que está ligado à "classe Instrumento", mas que o sobrescreve.
+teclado.escrever #Chamada do objeto "teclado" que está ligado à "class Instrumento", mas que não o sobrescreve.
