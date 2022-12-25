@@ -7,7 +7,7 @@ end
 class JogadorDeFutebol < Esportista # Classe Filho.
   def correr
     puts "Correr atrás da bola."
-    #super
+    super
   end
 end
 
