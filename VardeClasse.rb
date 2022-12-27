@@ -16,3 +16,5 @@ second_user.add('Mario') # Chama o método "add" e passando o parâmetro 'João'
 
 third_user = User.new #Cria o objeto "third_user" para o classe "User".
 third_user.add('Luciano') # Chama o método "add" e passando o parâmetro 'João' para a mesma.
+
+#Obs: A "variável de Classe" compartilha com todos os métodos existentes dentro dela.
