@@ -6,4 +6,4 @@ end
 
 foo
 
-puts local # Não pode ser atendido fora do método.
+puts local # Não pode ser atendido fora do método, pois é uma variável local apenas.
