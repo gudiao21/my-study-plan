@@ -1,4 +1,4 @@
-#Programa que consiste em mostar a aplicação de uma "variável de instância".
+#Programa que consiste em mostar a aplicação de uma "variável de instância" ou "atributo".
 class User
   def add(name) #Primeiro método da classe "User".
     @name = name #Criando variável de instância "@name".
