@@ -9,4 +9,4 @@ puts lista
 puts lista.length #Retorna a quantidade total de elementos.
 puts lista.sort #No caso de nomes, organiza em ordem alfabética.
 puts lista.sort.first
-puts lista.sort.last 
+puts lista.sort.last
