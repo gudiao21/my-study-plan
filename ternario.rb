@@ -1,4 +1,4 @@
-#Aula 11 do curso "Ruby para Iniciantes" - Operador Ternário ou Modelo Ternário.
+#Aula 11 do curso "Ruby para Iniciantes" - Operador Ternário ou Operação Ternária ou Conditional Ternary Operator.
 nome = "Diego"
 n = 5
 if nome.eql? "Diego" #É a mesma coisa de: if nome == "Diego".
