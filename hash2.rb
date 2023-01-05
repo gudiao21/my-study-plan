@@ -10,15 +10,16 @@ loop do
 
     break if(valor == 0)
 
-    alunos = []
+    alunos = [] #Cria-se o Hash
+
     3.times do
       aluno = {}
       
       puts "Digite o nome do aluno"
-      aluno[:nome] = gets
+      aluno[:nome] = gets.delete("\n") #deleta o "/n", mostrando tudo em uma linha só.
 
       puts "Digite telefone do aluno"
-      aluno[:tel] = gets
+      aluno[:tel] = gets.chomp #deleta o "/n", mostrando tudo em uma linha só.
 
       alunos << aluno
     end
