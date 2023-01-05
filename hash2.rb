@@ -12,7 +12,7 @@ loop do
 
     alunos = [] #Cria-se o Hash
 
-    3.times do
+    3.times do #Outro tipo de looping
       aluno = {}
       
       puts "Digite o nome do aluno"
@@ -24,7 +24,7 @@ loop do
       alunos << aluno
     end
     
-    alunos.each do |aluno|
+    alunos.each do |aluno| #outro looping
       puts "========================="
       puts "aluno: #{aluno[:nome]}, telefone: #{aluno[:tel]}"
     end
