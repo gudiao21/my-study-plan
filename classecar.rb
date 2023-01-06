@@ -1,5 +1,5 @@
 class Carro
-  def initialize(nome = "Modelo padrão")
+  def initialize(nome = "Modelo padrão")#Definindo o "construtor", "initialize".
     @nome = nome
   end
 
