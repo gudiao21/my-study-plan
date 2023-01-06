@@ -3,6 +3,24 @@
 # a["tel".to_sym] = 8087098089
 # puts a
 
+def captura_aluno
+  aluno = {}
+  puts "Digite o nome do aluno"
+  aluno[:nome] = gets.delete("\n")
+
+  puts "Digite telefone do aluno"
+  aluno[:tel] = gets.delete("\n")
+  
+  aluno
+end  
+
+  def mostrar_alunos(alunos)
+    alunos.each do |aluno| #outro looping
+      puts "========================="
+      puts "aluno: #{aluno[:nome]}, telefone: #{aluno[:tel]}"
+    end
+  end  
+
 loop do
     puts "Bem vindo ao programa"
     puts "Digit 0 para sair ou 1 para continuar."
@@ -13,19 +31,8 @@ loop do
     alunos = [] #Cria-se o Hash
 
     3.times do #Outro tipo de looping
-      aluno = {}
-      
-      puts "Digite o nome do aluno"
-      aluno[:nome] = gets.delete("\n") #deleta o "/n", mostrando tudo em uma linha só.
-
-      puts "Digite telefone do aluno"
-      aluno[:tel] = gets.chomp #deleta o "/n", mostrando tudo em uma linha só.
-
-      alunos << aluno
+      alunos << captura_aluno
     end
     
-    alunos.each do |aluno| #outro looping
-      puts "========================="
-      puts "aluno: #{aluno[:nome]}, telefone: #{aluno[:tel]}"
-    end
+    mostrar_alunos(alunos)
 end
