@@ -26,13 +26,13 @@ loop do
     puts "Digit 0 para sair ou 1 para continuar."
     valor = gets.to_i
 
-    break if(valor == 0)
+    break if(valor == 0) #Condição de saída do looping.
 
-    alunos = [] #Cria-se o Hash
+    alunos = [] #Cria-se o array.
 
-    3.times do #Outro tipo de looping
-      alunos << captura_aluno
+    3.times do #Outro tipo de looping, o executando 3 vezes.
+      alunos << captura_aluno #Guarda os 3 inputs em um array chamado "alunos"
     end
     
-    mostrar_alunos(alunos)
+    mostrar_alunos(alunos) #Chama o método "mostrar_alunos" passando "aluno" como parâmetro.
 end
