@@ -15,5 +15,11 @@ end
 puts l.call(4, 5)
 
 #Outra forma de se fazer a mesma coisa.
-l = proc.new {|param| param * 5} #Poderia ser apenas 'proc' também.
+l = Proc.new {|param| param * 5} #Poderia ser apenas 'proc' também.
     puts l.call(4)
+
+l = Proc.new do |param, p2, p3|
+    param = 0 if param.nil?
+    param * p2 * p3
+end
+puts l.call(5, 4 , 1)
