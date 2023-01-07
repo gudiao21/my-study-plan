@@ -1,7 +1,7 @@
 p "Qual ano você nasceu?"
 anoNascimento = gets.to_i
 
-if (anoNascimento >= 1946 && anoNascimento <= 1964)
+if (anoNascimento >= 19rs46 && anoNascimento <= 1964)
   p ("Sou da geração Baby Boomers.")
 
 elsif (anoNascimento >= 1965 && anoNascimento <= 1980)
