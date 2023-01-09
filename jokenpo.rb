@@ -1,5 +1,9 @@
-#A regra 
-def calcula_vendecor (sua_escolha, pc_escolha)
+#A regra é:
+#Pegra ganha da tesoura (amassando-a ou quebrando-a)
+#Tsoura ganha do papel (cortando-o)
+#Papel ganha da pedra (embrulhando-a)
+
+def calcula_vencedor (sua_escolha, pc_escolha) #Função para definir quem ganhou!
   resultado = (sua_escolha - pc_escolha) % 3
 
   if resultado == 1
@@ -17,20 +21,33 @@ opcoes = {
     3 => 'Tesoura'
 }
 
-opcoes.each do |k, v|
-  puts "#{k} - #{v}"
-end
+novo_jogo = 's'
 
-print 'Escolha uma opção acima: '
-sua_escolha = gets.to_i
+while novo_jogo == 's'
+ 
+  opcoes.each do |k, v|
+    puts "#{k} - #{v}"
+  end
 
-while opcoes[sua_escolha].nil?
-  print 'Opção inválida! Escolha novamente: '
+  print 'Escolha uma opção acima: '
   sua_escolha = gets.to_i
+
+  while opcoes[sua_escolha].nil?
+    print 'Opção inválida! Escolha novamente: '
+    sua_escolha = gets.to_i
+  end
+
+  pc_escolha = Random.rand(3) + 1
+
+  puts "\nVocê escolheu #{opcoes[sua_escolha]}"
+  puts "O PC escolheu #{opcoes[pc_escolha]}\n\n"
+
+  print calcula_vencedor(sua_escolha, pc_escolha)
+
+  print "\n\nDeseja jogar novamente? (s/n)"
+  novo_jogo = gets.chomp
+  
 end
 
-pc_escolha = Random.rand(3) + 1
-
-puts "\nVocê escolheu #{opcoes[sua_escolha]}"
-puts "O PC escolheu #{opcoes[pc_escolha]}"
+puts 'Obrigado por jogar!'
 
