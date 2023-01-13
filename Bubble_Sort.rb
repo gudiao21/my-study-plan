@@ -13,7 +13,7 @@ def bubble_sort(lista)
       end  
 
     end
-    break if not trocado # Esse comando terminará o Loop se a variável "trocado" não for configurado para verdadeira, ou seja, se for FALSO, pois no último comando o mesmo recebeu "True" como valor
+    break if not trocado # Esse comando terminará o Loop se a variável "trocado" não for configurado para verdadeira, ou seja, se for FALSO, pois no último comando o mesmo recebeu "True" como valor.
     # boleano. É aqui que ele checa se todos os elementos estão em ordem crescente, do primeiro elemento ao último, porque se não tiver o LOOP será execultado novamente.
     # sem troca significa que a lista já está ordenada, sendo assim não precisa mais de comparações.
   end
