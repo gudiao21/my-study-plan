@@ -3,10 +3,10 @@ def binary_search(list, item)
   high = list.length -1
     
   while low <= high
-    mid = (low + high)/2
+    mid = (low + high)/2 #"mid" será arrendondado para baixo automaticamente pelo Ruby se (low + high) não for um número par.
     guess = list[mid]
     if guess = item
-      return "O indice é: #{mid} e o elemento é: #{guess}"
+      return "O indice é: #{mid} e o elemento é: #{guess}."
     elsif guess > item
       high = mid - 1
     else
@@ -14,5 +14,5 @@ def binary_search(list, item)
     end
   end
   my_list = [2, 3, 5, 7, 9]
-  p binary_search(my_list, 7)
+  puts binary_search(my_list, 7)
 end              
