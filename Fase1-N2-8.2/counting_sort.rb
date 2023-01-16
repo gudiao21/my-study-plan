@@ -6,7 +6,7 @@ def counting_sort(a=[9, 8, 7, 6], min  = 0, max = 10)
     n = max - min + 1
     count = Array.new(n,0)
     len = a.length
-    output = Array.new(len) #Cria um array com comprimento definido por "len".
+    output = Array.new(len) #Cria um array com comprimento definido por "len"
   
     for i in 0...len
       count[a[i] - min] += 1
