@@ -1,4 +1,4 @@
-def counting_sort(a=[9, 8, 7, 6], min  = 0, max = 10)
+def counting_sort(a=[9, 8, 7, 6], min  = 0, max = 9)
     if min > max
       return "invalid range"
     end
