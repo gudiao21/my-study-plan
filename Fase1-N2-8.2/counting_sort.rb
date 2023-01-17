@@ -1,6 +1,6 @@
 def counting_sort(a=[9, 8, 7, 6], min  = 0, max = 9)
     if min > max
-      return "invalid range"
+      return "invalid range!"
     end
     
     n = max - min + 1 #n = 9 - 0 + 1 = 10
