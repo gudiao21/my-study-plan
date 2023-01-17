@@ -3,7 +3,7 @@ def counting_sort(a=[9, 8, 7, 6], min  = 0, max = 9)
       return "invalid range!"
     end
     
-    n = max - min + 1 #n = 9 - 0 + 1 = 10
+    n = max - min + 1 #n = 9 - 0 + 1 = 10.
     count = Array.new(n,0) #count=[0,0,0,0,0,0,0,0,0,0]
     len = a.length #len = 4
     output = Array.new(len) #Cria um array com comprimento definido por "len" = 4.
