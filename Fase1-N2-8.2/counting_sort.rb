@@ -5,19 +5,19 @@ def counting_sort(a=[9, 8, 7, 6, 6], min  = 0, max = 9)
     
     n = max - min + 1 #n = 9 - 0 + 1 = 10.
     count = Array.new(n,0) #count=[0,0,0,0,0,0,0,0,0,0]
-    len = a.length #len = 4
-    output = Array.new(len) #Cria um array com comprimento definido por "len" = 5.
+    len = a.length #len = 5
+    output = Array.new(len) #Cria um array com comprimento definido por "len" = 5. "output=[nil,nil,nil,nil,nil]."
   
     for i in 0...len
       count[a[i] - min] += 1
-    end #Resultaria no final do looping "Count=[0,0,0,0,0,0,2,1,1,1]."
+    end #Resultaria no final do loop "Count=[0,0,0,0,0,0,2,1,1,1]".Marca a qtd de frequência de determinado número.
     
     for i in 1...n
-      count[i] += count[i-1]
-    end
+      count[i] += count[i-1] #9
+    end #Resultaria no final do loop "count = [0,0,0,0,0,2,3,4,5,6]"
     
     for i in 0...len
-      output[count[a[i] - min] - 1] = a[i]
+      output[count[a[i] - min] - 1] = a[i] #"output=[0,1,2,3,4,5]."
       count[a[i] - min] -= 1 #"count=[0,0,0,0,0,1,2,3,4]."
     end
     
