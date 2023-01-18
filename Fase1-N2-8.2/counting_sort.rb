@@ -14,7 +14,7 @@ def counting_sort(a=[9, 8, 7, 6, 6], min  = 0, max = 9)
     
     for i in 1...n #n = 10
       count[i] += count[i-1] #
-    end #Resultaria no final do loop "count = [0,0,0,0,0,2,3,4,5,6]"
+    end #Resultaria no final do loop "count = [0,0,0,0,0,0,2,3,4,5]"
     
     for i in 0...len
       output[count[a[i] - min] - 1] = a[i] #"output=[0,0,6,7,8,9]"
