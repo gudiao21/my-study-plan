@@ -1,0 +1,24 @@
+def bubble_sort(lista)
+
+  comprimento = lista.length
+  
+  loop do
+    trocado = false #É preciso criar essa variável que vai ser usada para que não caia em um loop infinito! Aqui se gerencia a troca.
+    (comprimento - 1).times do|i| #Comando para execultar o LOOP para cada elemento da lista.
+    
+      if
+        lista[i] > lista [i + 1]
+        lista[i], lista[i+1] = lista[i+1], lista[i] #Então troque a posição dos 2 elementos (só fará isso se o comando acima for satisfeito).
+        trocado = true
+      end
+    end
+
+    break if not trocado #Esse comando terminará o loop se a variável "trocado" não for configurado para verdadeira, ou seja, se for FALSO, pois no último comando o mesmo recebeu "true" como valor boleano. É aqui que ele checa se todos os elementos estão em ordem crescente, do primeiro elemento ao último, porque se não tiver o LOOP será execultado novamente. Sem troca significa que a lista já está ordenada, sendo assim não pprecisa mais de comparações.
+  end
+
+  lista #retorna o novo array com a sequência de trocas correntes.
+
+end
+
+a = [4, 0, 3, 2, 9]
+p bubble_sort(a)
