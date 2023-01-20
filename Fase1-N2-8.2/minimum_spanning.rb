@@ -1,17 +1,18 @@
 # The graph.
 graph = {} #Creates new hash called graph with an empty key and value.
-graph["start"] = {} #Creates 1º pair of the hash "start" with an empty hash = "{}". So it is {"start"={}}.
-graph["start"]["a"] = 6 #Creates part of the 2º pair of the empty hash {"start"={"a"=>6}}.
+graph["start"] = {} #Creates key of the hash "start" with an empty hash = "{}". So it is {"start"={}}.
+graph["start"]["a"] = 6 #Creates part of the 1º pair of the empty hash {"start"={"a"=>6}}.
 graph["start"]["b"] = 2 #Creates the last part of the 2º pair of the hash {"start"={"a"=>6, "b"=>2}}.
 
-graph ["a"] = {}#Creates a new key-value pair in the hash "graph" where key = "a" and value is an empty hash.
-graph["a"]["fin"] = 1 #
+graph ["a"] = {}#Creates a new key-value pair in the hash "graph" where key = "a" and value is empty, {"start"=>{"a"=>6, "b"=>2}, "a"=>{}}.
+graph["a"]["fin"] = 1 #Add the value "1" at the last pair {"start"=>{"a"=>6, "b"=>2}, "a"=>1}.
 
-graph["b"] = {}
-graph["b"]["a"] = 3
-graph["b"]["fin"] = 5
+graph["b"] = {} #Add key "b" without value{"start"=>{"a"=>6, "b"=>2},"a"=>{"fin"=>1},"b"=>{}}.
+graph["b"]["a"] = 3 #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3}}.
+graph["b"]["fin"] = 5 #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3},"fin"=>5}}.
 
-graph["fin"] = {}
+
+graph["fin"] = {} #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3, "fin"=>5}, "fin"=>{}}.
 
 #The costs table
 costs = {}
