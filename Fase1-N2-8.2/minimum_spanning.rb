@@ -1,8 +1,8 @@
-# the graph
-graph = {}
-graph["start"] = {}
-graph["start"]["a"] = 6
-graph["start"["b"]] = 2
+# The graph.
+graph = {} #Creates new hash called graph.
+graph["start"] = {} #Creates 1º pair of the hash "start" with an empty hash = "{}".
+graph["start"]["a"] = 6 #Creates part of the 2º pair of the empty hash ("a" = 6).
+graph["start"]["b"] = 2 #Creates the last part of the 2º pair of the empty hash ("b" = 2).
 
 graph ["a"] = {}
 graph["a"]["fin"] = 1
@@ -11,9 +11,9 @@ graph["b"] = {}
 graph["b"]["a"] = 3
 graph["b"]["fin"] = 5
 
-graph["fin"] ={}
+graph["fin"] = {}
 
-#the costs table
+#The costs table
 costs = {}
 costs["a"] = 6
 costs["b"] = 2
@@ -59,11 +59,11 @@ until node.nil?
       parents[n] = node
     end
   end
-#Mark the node as processed.
-@processed << node
-#Find the next node to process, and loop.
-node = find_lowest_cost_node(costs)
+  #Mark the node as processed.
+  @processed << node
+  #Find the next node to process, and loop.
+  node = find_lowest_cost_node(costs)
 end
 
-puts "Cost from the stard tho each node:"
+puts "Cost from the start tho each node:"
 puts costs
