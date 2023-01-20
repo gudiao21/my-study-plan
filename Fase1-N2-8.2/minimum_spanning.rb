@@ -13,20 +13,23 @@ graph["b"]["fin"] = 5 #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3
 
 
 graph["fin"] = {} #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3, "fin"=>5}, "fin"=>{}}.
+#Obs: graph.keys = ["start", "a", "b", "fin"]
+#Obs 2: graph.values = [{"a"=>6, "b"=>2}, {"fin"=>1}, {"a"=>3, "fin"=>5}, {}].
+
 
 #The costs table
-costs = {}
-costs["a"] = 6
-costs["b"] = 2
-costs["fin"] = Float::INFINITY
+costs = {} # Creates an empty hash.
+costs["a"] = 6 # Creates {"a"=>6}.
+costs["b"] = 2 # {"a"=>6, "b"=2}.
+costs["fin"] = Float::INFINITY #{"a"=>6, "b"=2, "fin"=Float}.
 
 #The parents table.
-parents = {}
-parents["a"] = "start"
-parents["b"] = "start"
-parents["fin"] = nil
+parents = {} #Creates an empty hash.
+parents["a"] = "start" #Creates {"a"=>"start"}.
+parents["b"] = "start" # {"a"=>"start", "b"=>"start"}.
+parents["fin"] = nil #{"a"=>"start", "b"=>"start", "fin"=>nil}.
 
-@processed = []
+@processed = [] #Creating an instance Array.It's goint to be unique in a different classes.
 
 def find_lowest_cost_node(costs)
   lowest_cost = Float::INFINITY
