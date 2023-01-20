@@ -1,11 +1,11 @@
 # The graph.
-graph = {} #Creates new hash called graph.
-graph["start"] = {} #Creates 1º pair of the hash "start" with an empty hash = "{}".
-graph["start"]["a"] = 6 #Creates part of the 2º pair of the empty hash ("a" = 6).
-graph["start"]["b"] = 2 #Creates the last part of the 2º pair of the empty hash ("b" = 2).
+graph = {} #Creates new hash called graph with an empty key and value.
+graph["start"] = {} #Creates 1º pair of the hash "start" with an empty hash = "{}". So it is {"start"={}}.
+graph["start"]["a"] = 6 #Creates part of the 2º pair of the empty hash {"start"={"a"=>6}}.
+graph["start"]["b"] = 2 #Creates the last part of the 2º pair of the hash {"start"={"a"=>6, "b"=>2}}.
 
-graph ["a"] = {}
-graph["a"]["fin"] = 1
+graph ["a"] = {}#Creates a new key-value pair in the hash "graph" where key = "a" and value is an empty hash.
+graph["a"]["fin"] = 1 #
 
 graph["b"] = {}
 graph["b"]["a"] = 3
