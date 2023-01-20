@@ -19,7 +19,7 @@ costs["a"] = 6
 costs["b"] = 2
 costs["fin"] = Float::INFINITY
 
-#The parents table
+#The parents table.
 parents = {}
 parents["a"] = "start"
 parents["b"] = "start"
