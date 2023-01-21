@@ -24,7 +24,7 @@ costs["b"] = 2 # {"a"=>6, "b"=2}.
 costs["fin"] = Float::INFINITY #{"a"=>6, "b"=2, "fin"=Float}.
 
 #The parents table.
-parents = {} #Creates an empty hash.
+parents = {} #Creates an empty hash called "parents".
 parents["a"] = "start" #Creates {"a"=>"start"}.
 parents["b"] = "start" # {"a"=>"start", "b"=>"start"}.
 parents["fin"] = nil #{"a"=>"start", "b"=>"start", "fin"=>nil}.
@@ -35,15 +35,16 @@ def find_lowest_cost_node(costs)
   lowest_cost = Float::INFINITY
   lowest_cost_node = nil
   #Go through each node.
-  costs.each do |node, cost|
+  costs.each do |node, cost| #key = node, value = cost.
     #If it's the lowest cost so far and hasn't been processed yet ...
-    if cost < lowest_cost && !@processed.member?(node)
+    if cost < lowest_cost && !@processed.member?(node) #"!" inverts the boolean value, returns true if the elementi is not present in the collection and false if it is.
       #... set it as the new lowest-cost node.
-      lowest_cost = cost
-      lowest_cost_node = node
+      lowest_cost = cost #If the condition is true, "lowest_cost = cost".
+      lowest_cost_node = node #If the condition is true, "lowest_cost_node = node".
+      #Obs: condition satisfied the "lowest_cost_node" will hold the node that met the conditions and has the lowest cost.
     end
   end
-  lowest_cost_node
+  lowest_cost_node #return the "lowest_cost_node".
 end
 
 #Find the lowest-cost node that you haven't processed yet.
