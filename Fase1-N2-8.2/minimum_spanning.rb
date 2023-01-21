@@ -2,7 +2,7 @@
 graph = {} #Creates new hash called graph with an empty key and value.
 graph["start"] = {} #Creates key of the hash "start" with an empty hash = "{}". So it is {"start"={}}. "start" is an initial node.
 graph["start"]["a"] = 6 #Creates part of the 1º pair of the empty hash {"start"={"a"=>6}}.
-graph["start"]["b"] = 2 #Creates the last part of the 2º pair of the hash {"start"={"a"=>6, "b"=>2}}.
+graph["start"]["b"] = 2 #Creates the last part of the 2º pair of the hash {"start"={"a"=>6, "b"=>2}}
 
 graph ["a"] = {}#Creates a new key-value pair in the hash "graph" where key = "a" and value is empty, {"start"=>{"a"=>6, "b"=>2}, "a"=>{}}.
 graph["a"]["fin"] = 1 #Add the value "1" at the last pair {"start"=>{"a"=>6, "b"=>2}, "a"=>1}.
@@ -30,7 +30,7 @@ parents["b"] = "start" # {"a"=>"start", "b"=>"start"}.
 parents["fin"] = nil #{"a"=>"start", "b"=>"start", "fin"=>nil}.
 
 @processed = [] #Creating an instance variable.It's going to be unique in a different classes.
-
+,
 def find_lowest_cost_node(costs)
   lowest_cost = Float::INFINITY
   lowest_cost_node = nil
