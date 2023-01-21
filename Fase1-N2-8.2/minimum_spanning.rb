@@ -1,11 +1,11 @@
 # The graph.
 graph = {} #Creates new hash called graph with an empty key and value.
 graph["start"] = {} #Creates key of the hash "start" with an empty hash = "{}". So it is {"start"={}}. "start" is an initial node.
-graph["start"]["a"] = 6 #Creates part of the 1º pair of the empty hash {"start"={"a"=>6}}.
-graph["start"]["b"] = 2 #Creates the last part of the 2º pair of the hash {"start"={"a"=>6, "b"=>2}}
+graph["start"]["a"] = 6 #Creates part of the 1º pair of the empty hash {"start"=>{"a"=>6}}.
+graph["start"]["b"] = 2 #Creates the last part of the 2º pair of the hash {"start"=>{"a"=>6, "b"=>2}}
 
 graph ["a"] = {}#Creates a new key-value pair in the hash "graph" where key = "a" and value is empty, {"start"=>{"a"=>6, "b"=>2}, "a"=>{}}.
-graph["a"]["fin"] = 1 #Add the value "1" at the last pair {"start"=>{"a"=>6, "b"=>2}, "a"=>1}.
+graph["a"]["fin"] = 1 #Add the value "1" at the last pair {"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}}.
 
 graph["b"] = {} #Add key "b" without value{"start"=>{"a"=>6, "b"=>2},"a"=>{"fin"=>1},"b"=>{}}.
 graph["b"]["a"] = 3 #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3}}.
@@ -21,7 +21,7 @@ graph["fin"] = {} #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3, "f
 costs = {} # Creates an empty hash.
 costs["a"] = 6 # Creates {"a"=>6}.
 costs["b"] = 2 # {"a"=>6, "b"=2}.
-costs["fin"] = Float::INFINITY #{"a"=>6, "b"=2, "fin"=Float}.
+costs["fin"] = Float::INFINITY #{"a"=>6, "b"=2, "fin"=Infinity}.
 
 #The parents table
 parents = {} #Creates an empty hash called "parents".
