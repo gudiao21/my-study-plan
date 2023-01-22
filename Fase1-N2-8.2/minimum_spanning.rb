@@ -30,7 +30,7 @@ parents["b"] = "start" # {"a"=>"start", "b"=>"start"}.
 parents["fin"] = nil #{"a"=>"start", "b"=>"start", "fin"=>nil}.
 
 @processed = [] #Creating an instance variable.It's going to be unique in a different classes.
-,
+
 def find_lowest_cost_node(costs)
   lowest_cost = Float::INFINITY
   lowest_cost_node = nil
@@ -50,7 +50,7 @@ end
 #Find the lowest-cost node that you haven't processed yet.
 node = find_lowest_cost_node(costs)
 #If you've processed all the nodes, this while loop is done.
-until node.nil?
+until node.nil? #Means the loop will continue to execute as long as the 'node' variable is not 'nil'.
   cost = costs[node]
   #Go through all the neighbors of this node.
   neighbors = graph[node]
@@ -70,5 +70,5 @@ until node.nil?
   node = find_lowest_cost_node(costs)
 end
 
-puts "Cost from the start tho each node:"
+puts "Cost from the start to each node:"
 puts costs
