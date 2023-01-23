@@ -34,7 +34,7 @@ parents["fin"] = nil #{"a"=>"start", "b"=>"start", "fin"=>nil}. Page 155, figura
 def find_lowest_cost_node(costs)
   lowest_cost = Float::INFINITY
   lowest_cost_node = nil
-  #Go through each node.
+  #Go through each node:
   costs.each do |node, cost| #key = node, value = cost.
     #If it's the lowest cost so far and hasn't been processed yet ...
     if cost < lowest_cost && !@processed.member?(node) #"!" inverts the boolean value, returns true if the elementi is not present in the collection "@processed" and false if it is.
