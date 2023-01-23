@@ -17,7 +17,7 @@ graph["fin"] = {} #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3, "f
 #Obs 2: graph.values = [{"a"=>6, "b"=>2}, {"fin"=>1}, {"a"=>3, "fin"=>5}, {}].
 
 
-#The costs table.
+#The costs table:
 costs = {} # Creates an empty hash.
 costs["a"] = 6 # Creates {"a"=>6}.
 costs["b"] = 2 # {"a"=>6, "b"=2}.
