@@ -12,7 +12,7 @@ graph["b"]["a"] = 3 #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3}}
 graph["b"]["fin"] = 5 #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3},"fin"=>5}}.
 
 
-graph["fin"] = {} #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3, "fin"=>5}, "fin"=>{}}.
+graph["fin"] = {} #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3, "fin"=>5}, "fin"=>{}}.  Page 155 of the book "Entendendo algorítimo", figura "GRAFO".
 #Obs: graph.keys = ["start", "a", "b", "fin"]
 #Obs 2: graph.values = [{"a"=>6, "b"=>2}, {"fin"=>1}, {"a"=>3, "fin"=>5}, {}].
 
@@ -21,13 +21,13 @@ graph["fin"] = {} #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3, "f
 costs = {} # Creates an empty hash.
 costs["a"] = 6 # Creates {"a"=>6}.
 costs["b"] = 2 # {"a"=>6, "b"=2}.
-costs["fin"] = Float::INFINITY #{"a"=>6, "b"=2, "fin"=Infinity}.
+costs["fin"] = Float::INFINITY #{"a"=>6, "b"=2, "fin"=Infinity}. #Page 155, figura "CUSTOS".
 
 #The parents table
 parents = {} #Creates an empty hash called "parents".
 parents["a"] = "start" #Creates {"a"=>"start"}.
 parents["b"] = "start" # {"a"=>"start", "b"=>"start"}.
-parents["fin"] = nil #{"a"=>"start", "b"=>"start", "fin"=>nil}.
+parents["fin"] = nil #{"a"=>"start", "b"=>"start", "fin"=>nil}. Page 155, figura "PAIS".
 
 @processed = [] #Creating an instance variable.It's going to be unique in a different classes.
 
