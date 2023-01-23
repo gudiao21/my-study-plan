@@ -23,7 +23,7 @@ costs["a"] = 6 # Creates {"a"=>6}.
 costs["b"] = 2 # {"a"=>6, "b"=2}.
 costs["fin"] = Float::INFINITY #{"a"=>6, "b"=2, "fin"=Infinity}. #Page 155, figura "CUSTOS".
 
-#The parents table
+#The parents table:
 parents = {} #Creates an empty hash called "parents".
 parents["a"] = "start" #Creates {"a"=>"start"}.
 parents["b"] = "start" # {"a"=>"start", "b"=>"start"}.
