@@ -1,4 +1,4 @@
-# The graph.
+# The graph:
 graph = {} #Creates new hash called graph with an empty key and value.
 graph["start"] = {} #Creates key of the hash "start" with an empty hash = "{}". So it is {"start"={}}. "start" is an initial node.
 graph["start"]["a"] = 6 #Creates part of the 1º pair of the empty hash {"start"=>{"a"=>6}}.
