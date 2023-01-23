@@ -47,7 +47,7 @@ def find_lowest_cost_node(costs)
   lowest_cost_node #return the "lowest_cost_node".
 end
 
-#Find the lowest-cost node that you haven't processed yet.
+#Find the lowest-cost node that you haven't processed yet:
 node = find_lowest_cost_node(costs)
 #If you've processed all the nodes, this while loop is done.
 until node.nil? #Means the loop will continue to execute as long as the 'node' variable is not 'nil'.
@@ -64,7 +64,7 @@ until node.nil? #Means the loop will continue to execute as long as the 'node' v
       parents[n] = node
     end
   end
-  #Mark the node as processed.
+  #Mark the node as processed:
   @processed << node
   #Find the next node to process, and loop.
   node = find_lowest_cost_node(costs)
