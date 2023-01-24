@@ -66,7 +66,7 @@ until node.nil? #Means the loop will continue to execute as long as the 'node' v
   end
   #Mark the node as processed:
   @processed << node
-  #Find the next node to process, and loop.
+  #Find the next node to process, and loop:
   node = find_lowest_cost_node(costs)
 end
 
