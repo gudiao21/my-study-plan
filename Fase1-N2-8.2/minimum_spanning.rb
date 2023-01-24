@@ -58,7 +58,7 @@ until node.nil? #Means the loop will continue to execute as long as the 'node' v
     new_cost = cost + neighbors[n]
     #If it's cheaper to get to this neighbor by going through this node...
     if costs[n] > new_cost
-      #... update the cost for this node.
+      #... update the cost for this node
       costs[n] = new_cost
       #This node becomes the new parent for this neighbor.
       parents[n] = node
