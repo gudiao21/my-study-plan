@@ -13,7 +13,7 @@ graph["b"]["fin"] = 5 #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3
 
 
 graph["fin"] = {} #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3, "fin"=>5}, "fin"=>{}}.  Page 155 of the book "Entendendo algorítimo", figura "GRAFO".
-#Obs: graph.keys = ["start", "a", "b", "fin"]
+#Obs: graph.keys = ["start", "a", "b", "fin"].
 #Obs 2: graph.values = [{"a"=>6, "b"=>2}, {"fin"=>1}, {"a"=>3, "fin"=>5}, {}].
 
 
