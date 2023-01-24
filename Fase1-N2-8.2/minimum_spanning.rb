@@ -52,7 +52,7 @@ node = find_lowest_cost_node(costs)
 #If you've processed all the nodes, this while loop is done.
 until node.nil? #Means the loop will continue to execute as long as the 'node' variable is not 'nil'.
   cost = costs[node]
-  #Go through all the neighbors of this node.
+  #Go through all the neighbors of this node:
   neighbors = graph[node]
   neighbors.keys.each do |n|
     new_cost = cost + neighbors[n]
