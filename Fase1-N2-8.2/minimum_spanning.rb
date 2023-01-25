@@ -5,7 +5,7 @@ graph["start"]["a"] = 6 #Creates part of the 1º pair of the empty hash {"start"
 graph["start"]["b"] = 2 #Creates the last part of the 2º pair of the hash {"start"=>{"a"=>6, "b"=>2}}.
 
 graph ["a"] = {}#Creates a new key-value pair in the hash "graph" where key = "a" and value is empty, {"start"=>{"a"=>6, "b"=>2}, "a"=>{}}.
-graph["a"]["fin"] = 1 #Add the value "1" at the last pair {"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}}.
+graph["a"]["fin"] = 1 #Add the value "1" at the last pair {"start"=>{"a"=>6, "b"=>2}, "a"=>"fin"=>1}}.
 
 graph["b"] = {} #Add key "b" without value{"start"=>{"a"=>6, "b"=>2},"a"=>{"fin"=>1},"b"=>{}}.
 graph["b"]["a"] = 3 #{"start"=>{"a"=>6, "b"=>2}, "a"=>{"fin"=>1}, "b"=>{"a"=>3}}.
