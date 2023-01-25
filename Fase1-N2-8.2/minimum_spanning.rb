@@ -26,7 +26,7 @@ costs["fin"] = Float::INFINITY #{"a"=>6, "b"=2, "fin"=Infinity}. #Page 155, figu
 #The parents table:
 parents = {} #Creates an empty hash called "parents".
 parents["a"] = "start" #Creates {"a"=>"start"}.
-parents["b"] = "start" # {"a"=>"start", "b"=>"start"}.
+parents["b"] = "start" # {"a"=>"start","b"=>"start"}.
 parents["fin"] = nil #{"a"=>"start", "b"=>"start", "fin"=>nil}. Page 155, figura "PAIS".
 
 @processed = [] #Creating an instance variable.It's going to be unique in a different classes.
