@@ -5,7 +5,7 @@ graph = {} #Creates new hash called graph with an empty key and value.
 graph["start"] = {} #Creates key of the hash "start" with an empty hash = "{}". So it is {"start"={}}, "start" is an initial node.
 graph["start"]["a"] = 6 #Creates part of the 1º pair of the empty hash {"start"=>{"a"=>6}}.
 graph["start"]["b"] = 2 #Creates the last part of the 2º pair of the hash {"start"=>{"a"=>6, "b"=>2}}.
-
+p graph
 debugger
 graph ["a"] = {}#Creates a new key-value pair in the hash "graph" where key = "a" and value is empty, {"start"=>{"a"=>6, "b"=>2}, "a"=>{}}.
 graph["a"]["fin"] = 1 #Add the value "1" at the last pair {"start"=>{"a"=>6, "b"=>2}, "a"=>"fin"=>1}}.
